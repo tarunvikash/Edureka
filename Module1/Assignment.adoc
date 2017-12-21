@@ -1,0 +1,80 @@
+=c
+	#program 1
+
+print "Enter a number\n";
+$input = <>;
+if($input % 2 == 0){
+	print "The number provided i.e. $input is an even number\n";
+}else{
+	print "The number provided i.e. $input is an even number\n";
+}
+=cut
+
+=c
+	#program 2
+
+$url = "www.edureka.co";
+substr $url,0,3,"";
+print "$url\n";
+
+$url = "www.edureka.co";
+$url = uc $url;
+print "$url\n";
+
+print length($url);
+=cut
+
+=c
+	#program 3
+	
+$a = 10;
+$b = 20;
+print "$a, $b\n";
+
+$a = $a + $b;
+$b = $a - $b;
+$a = $a - $b;
+print "$a, $b";
+
+=cut
+
+=c
+	#program 4
+	
+print "Enter the temperature in Degree Centigrate\n";
+$temp_deg = <>;
+chomp($temp_deg);
+$temp_far = ( $temp_deg * ( 9 / 5 ) ) + 32;
+print "Temperature $temp_deg Degree in farenhiet is : $temp_far";
+
+=cut
+
+=c
+	#program 5
+	
+print "Enter rate\n";
+$rate = <>;
+print "Enter Amount\n";
+$amount = <>;
+print "Enter the time period\n";
+$time = <>;
+chomp($rate);
+chomp($time);
+chomp($rate);
+
+$si = ($rate * $time * $amount) / 100;
+print "The Simp;e intrest is : $si\n";
+
+=cut
+
+=c
+	#program 6
+	
+print "Enter Employee basic Salary\n";
+$basic_salary = <>;
+chomp($basic_salary);
+
+$gross_salary = $basic_salary + ($basic_salary*0.1) + ($basic_salary * 0.12);
+print "The gross salary is : $gross_salary";
+
+=cut
